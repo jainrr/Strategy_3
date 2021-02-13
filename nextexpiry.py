@@ -2,19 +2,7 @@ import requests,json
 import pandas as pd
 from datetime import datetime
 from dateutil.relativedelta import relativedelta, TH
-
-def optionChain (expirydate):
-
-    urlheader = {
-      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36",
-      "authority": "www.nseindia.com",
-      "scheme":"https"
-    }
-    
-    url="https://www.nseindia.com/live_market/dynaContent/live_watch/option_chain/optionKeys.jsp?"
-    params="segmentLink=17&instrument=OPTIDX&symbol=NIFTY&date="    
-    url_encoded=url + params + expirydate
-    
+   
 #def nextThu_and_lastThu_expiry_date ():
 
 todayte = datetime.today()
