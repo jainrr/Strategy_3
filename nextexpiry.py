@@ -21,7 +21,7 @@ todayte = datetime.today()
 
 cmon = todayte.month
 if_month_next=(todayte + relativedelta(weekday=TH(1))).month
-next_thursday_expiry=todayte + relativedelta(weekday=TH(1))
+next_thursday_expiry=todayte + relativedelta(weekday=TH(2))
 
 if (if_month_next!=cmon):
     month_last_thu_expiry= todayte + relativedelta(weekday=TH(5))
