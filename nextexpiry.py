@@ -46,7 +46,6 @@ if d<10:
 	b= b[1]
 c = datetime.datetime.strptime(str_next_thursday_expiry,'%d%b%Y').strftime('%d')
 new_expirydate= a + b + c
-print (a , b , c)
 if str_next_thursday_expiry == str_month_last_thu_expiry:
 		ed = thu1
 else:
