@@ -9,7 +9,7 @@ todayte = datetime.today()
 
 cmon = todayte.month
 if_month_next=(todayte + relativedelta(weekday=TH(1))).month
-next_thursday_expiry=todayte + relativedelta(weekday=TH(2))
+next_thursday_expiry=todayte + relativedelta(weekday=TH(2)) #replace 2 to 1 to get current week expiry date
 
 if (if_month_next!=cmon):
 	month_last_thu_expiry= todayte + relativedelta(weekday=TH(5))
